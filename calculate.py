@@ -10,8 +10,6 @@ draw_graphene = False
 
 allMolFiles = [f for f in glob.glob(f"{acceptor_path}/*.mol")]
 
-print(allMolFiles)
-
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser()
@@ -70,7 +68,7 @@ if __name__ == "__main__":
 
         test_range = 2
         test_rotation = np.pi*2
-        test_ratio = 2
+        test_ratio = 25
 
         
         gbtr = molecule.getBestTranslationRotation(graphene,test_range,test_rotation,test_range/test_ratio,test_rotation/test_ratio)
